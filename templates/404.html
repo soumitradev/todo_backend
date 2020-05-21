@@ -1,1 +1,75 @@
-404
+<!DOCTYPE html>
+<html lang="en" style="height: 100%; margin: 0; margin-top: 0;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap" rel="stylesheet">
+  <title>404</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font: 400 15px/1.8 "Lato", sans-serif;
+    }
+
+    .purple-grad {
+      background-image: linear-gradient(45deg, #667eea, #764ba2) !important;
+      height: 100%;
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 10%;
+      width: 100%;
+      text-align: left;
+    }
+
+    .caption span.border {
+      color: #fff;
+      font-size: 300%;
+    }
+
+    .column1{
+      float: left;
+      width: 20%;
+    }
+
+    .column2{
+      float: left;
+      width: 80%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column1, .column2 {
+        width: 100%;
+      }
+    }
+  </style>
+  <meta name="description" content="You saw nothing. Go home.">
+</head>
+  <body>
+    <div class="purple-grad">
+      <div class="caption row">
+        <div class="column1">
+          <img src="https://i.imgur.com/7UPgbMP.png" style="width: 200%;">
+        </div>
+        <div class="column2">
+          <span class="border" style="padding-left: 40%; font-size: 1000%; font-family: 'Roboto Mono', monospace;">404</span><br>
+          <span class="border" style="padding-left: 40%; font-size: 200%; font-family: 'Roboto Mono', monospace; font-weight: 700;">You didn't see anything. Go <a href=".">home</a>.</span>
+        </div>
+      </div>
+    </div>    
+  </body>
+</html>

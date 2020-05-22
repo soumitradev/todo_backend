@@ -4,7 +4,7 @@ import random
 import string
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = False
+app.config["DEBUG"] = True
 
 InvalidID = {
   "error": {
@@ -125,4 +125,5 @@ def get_random_alphaNumeric_string(stringLength=8):
 def page_not_found(e):
     return flask.render_template("404.html"), 404
 
-app.run()
+if __name__ == '__main__':
+    app.run(debug=True)

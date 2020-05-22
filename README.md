@@ -1,8 +1,10 @@
 # ToDo++
 ## What?
-This is the next level of my todo list web app. This time, it has a backend written in Python and powered by Flask. It is a CRUD app that uses a RESTful API. This is the code repository for the backend API. It can Create, Read, Update and Delete notes. It can store notes publicly, and you can access these notes from any device anywhere in the world. The frontend for this app is still a work in progress, and this code needs to be pushed to a server for this to work.
+This is the next level of my todo list web app. This time, it has a backend written in Python and powered by Flask. It is a CRUD app that uses a RESTful API. This is the code repository for the backend API. It can Create, Read, Update and Delete notes. It can store notes publicly, and you can access these notes from any device anywhere in the world. The frontend for this app is still a work in progress.
 
-I'm thinking about hosting the frontend on GitHub Pages or Netlify.
+The frontend repo: [https://github.com/soumitradev/todo_frontend](https://github.com/soumitradev/todo_frontend)
+
+I'm hosting the frontend on GitHub Pages.
 
 I have hosted this backend API on Heroku, and you can make requests to it here:
 

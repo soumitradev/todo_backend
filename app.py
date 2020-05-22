@@ -53,17 +53,20 @@ def todo_id():
                 title = flask.request.form['title']
                 text = flask.request.form['text']
 
-                for i in data:
-                    if i['id'] == id:
-                        i['title'] = title
-                        i['text'] = text
-                        res = i
-                        break
+                if title and text:
+                    for i in data:
+                        if i['id'] == id:
+                            i['title'] = title
+                            i['text'] = text
+                            res = i
+                            break
 
-                with open("./todo.json", "w") as f:
-                    json.dump(data, f)
+                    with open("./todo.json", "w") as f:
+                        json.dump(data, f)
 
-                return json.dumps(res)
+                    return json.dumps(res)
+                else:
+                    return EmptyText, 400
             else:
                 return InvalidID, 400
         else:

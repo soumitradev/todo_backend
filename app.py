@@ -44,7 +44,7 @@ def todo_id():
             return InvalidID, 400
         
     else:
-        if flask.request.form['id']:
+        if flask.request.form.get('id'):
             with open("./todo.json", "r") as f:
                 data = json.load(f)
 

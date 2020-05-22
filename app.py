@@ -50,8 +50,8 @@ def todo_id():
 
             id = flask.request.form['id']
             if id in get_taken_ids():
-                title = flask.request.form['title']
-                text = flask.request.form['text']
+                title = flask.request.form.get('title')
+                text = flask.request.form.get('text')
 
                 if title and text:
                     for i in data:
@@ -77,8 +77,8 @@ def todo_id():
             while id in get_taken_ids():
                 id = get_random_alphaNumeric_string(11)
 
-            title = flask.request.form['title']
-            text = flask.request.form['text']
+            title = flask.request.form.get('title')
+            text = flask.request.form.get('text')
 
             if title and text:
                 res = {"id" : id, "title" : title, "text" : text}

@@ -126,4 +126,4 @@ def get_random_alphaNumeric_string(stringLength=8):
 def page_not_found(e):
     return flask.render_template("404.html"), 404
 
-app.run(threaded=True, port = int(os.environ.get('PORT', 5000)))
+app.run(threaded=True, port = int(os.environ.get('PORT', 6951)))

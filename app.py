@@ -2,7 +2,6 @@ import flask
 import json
 import random
 import string
-import os
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = False
@@ -126,4 +125,4 @@ def get_random_alphaNumeric_string(stringLength=8):
 def page_not_found(e):
     return flask.render_template("404.html"), 404
 
-app.run(threaded=True, port = int(os.environ.get('PORT', 6951)))
+app.run()

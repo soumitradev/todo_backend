@@ -2,9 +2,12 @@ import flask
 import json
 import random
 import string
+from flask_cors import CORS
+
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
+CORS(app)
 
 InvalidID = {
   "error": {
